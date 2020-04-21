@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity(){
 
     private lateinit var auth: FirebaseAuth// ...
 // Initialize Firebase Auth
-
+//ㅇ
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

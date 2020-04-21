@@ -1,5 +1,5 @@
 package com.example.comin
-//test 중
+//test 중 중
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
