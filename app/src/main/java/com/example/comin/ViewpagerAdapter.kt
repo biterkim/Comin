@@ -13,9 +13,10 @@ class  ViewpagerAdapter(private  val context: Context) : PagerAdapter(){
     private var layoutInflater : LayoutInflater?=null
 
     val Image = arrayOf(
-        R.drawable.ai,
-        R.drawable.css,
-        R.drawable.html
+        R.drawable.event1,
+        R.drawable.event2,
+        R.drawable.event3,
+        R.drawable.event4
 
     )
 

@@ -26,33 +26,33 @@ class MainActivity : AppCompatActivity(){
         auth = FirebaseAuth.getInstance()
 
         val img = arrayOf(
-            R.drawable.ai,
-            R.drawable.css,
-            R.drawable.html,
-            R.drawable.id,
-            R.drawable.jpg,
-            R.drawable.js,
-            R.drawable.mp4,
-            R.drawable.pdf,
-            R.drawable.php,
-            R.drawable.png,
-            R.drawable.psd,
-            R.drawable.tiff
+            R.drawable.premium,
+            R.drawable.square,
+            R.drawable.treasure,
+//            R.drawable.id,
+//            R.drawable.jpg,
+//            R.drawable.js,
+//            R.drawable.mp4,
+//            R.drawable.pdf,
+//            R.drawable.php,
+//            R.drawable.png,
+//            R.drawable.psd,
+            R.drawable.sidedish
         )
 
         val text = arrayOf(
-            "ai",
-            "css",
-            "html",
-            "id",
-            "jpg",
-            "js",
-            "mp4",
-            "pdf",
-            "php",
-            "png",
-            "psd",
-            "tiff"
+            "프리미엄 도시락",
+            "사각 도시락",
+            "보물 도시락",
+//            "id",
+//            "jpg",
+//            "js",
+//            "mp4",
+//            "pdf",
+//            "php",
+//            "png",
+//            "psd",
+            "반찬 및 음료"
         )
 
         val gridviewAdapter = GridviewAdapter(this, img,text)

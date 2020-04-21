@@ -26,12 +26,12 @@ class ContentFragment : Fragment() {
         var view : View = inflater.inflate(R.layout.fragment_content,container,false)
 
         list1.add("a")
-        list1.add("a")
-        list1.add("a")
+        //list1.add("a")
+        //list1.add("a")
 
         list2.add("a")
-        list2.add("a")
-        list2.add("a")
+        //list2.add("a")
+        //list2.add("a")
 
         val list_adapter = ListAdapter(requireContext(),list1,list2)
         view.content_listview.adapter = list_adapter

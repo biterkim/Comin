@@ -3,6 +3,18 @@
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+<!--    <Button-->
+<!--        android:id="@+id/buy_button"-->
+<!--        android:text="구매하기"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:textSize="15dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:background="#92cfbf"-->
+<!--        android:layout_height="60dp"/>-->
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/lv_image_area"
         android:src="@drawable/ai"

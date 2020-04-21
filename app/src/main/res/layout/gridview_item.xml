@@ -5,8 +5,8 @@
 
     <ImageView
         android:id="@+id/gridview_img"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
         android:src="@drawable/ai"/>
 
@@ -15,7 +15,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:textSize="20dp"
         android:text="aaa"
+        android:layout_marginBottom="25dp"
         android:textStyle="bold"/>
 
 </LinearLayout>
