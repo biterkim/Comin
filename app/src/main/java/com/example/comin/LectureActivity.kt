@@ -1,5 +1,5 @@
 package com.example.comin
-
+//test - SSY1203
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
