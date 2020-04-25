@@ -14,10 +14,10 @@ class FragmentAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm){
                 SquareFragment()
             }
             2->{
-                SecondFragment()
+                ThirdFragment()
             }
             else -> {
-                ThirdFragment()
+                SecondFragment()
             }
         }
 

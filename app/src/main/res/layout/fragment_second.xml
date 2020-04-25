@@ -5,11 +5,9 @@
     android:layout_height="match_parent"
     tools:context=".Fragment.ListFragment.SecondFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ListView
+        android:id="@+id/listview_second_fragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="100dp"
-        android:text="2번" />
+        android:layout_height="wrap_content"/>
 
 </FrameLayout>
