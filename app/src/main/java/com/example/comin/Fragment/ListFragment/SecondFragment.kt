@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.fragment_second.view.*
 /**
  * A simple [Fragment] subclass.
  */
-class SecondFragment : Fragment() {
+class SecondFragment : Fragment() {//
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

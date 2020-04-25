@@ -8,16 +8,16 @@ class FragmentAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm){
     override fun getItem(position: Int): Fragment {
         return  when(position) {
             0->{
-                FirstFragment() //프리미엄
+                FirstFragment()
             }
             1->{
-                SquareFragment() //사각도시락
+                SquareFragment()
             }
             2->{
-                ThirdFragment() // 보물도시락
+                ThirdFragment()
             }
             else -> {
-                SecondFragment() // 사이드
+                SecondFragment()
             }
         }
 
