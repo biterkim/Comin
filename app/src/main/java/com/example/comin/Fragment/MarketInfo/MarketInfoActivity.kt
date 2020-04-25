@@ -21,6 +21,8 @@ class MarketInfoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_market_info)
 
         lecture_text.text = intent.getStringExtra("title")
+        lecture_review_count.text = intent.getStringExtra("category")//카테고리 변경을 위함
+        price_real_text.text = intent.getStringExtra("price")//제품마다 가격도 변경해주기 위함
 
         FirebaseUtils.db
             .collection("zzim")

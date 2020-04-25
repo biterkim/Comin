@@ -46,7 +46,7 @@
 
         <TextView
             android:id="@+id/price_text"
-            android:text="강의금액"
+            android:text="금액"
             android:layout_width="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -114,7 +114,7 @@
             app:layout_constraintEnd_toStartOf="@id/figure_2"
             app:layout_constraintHorizontal_weight="1"
             app:layout_constraintStart_toStartOf="parent"
-            android:text="내용"/>
+            android:text="선택 현황"/>
 
         <TextView
             android:id="@+id/figure_2"

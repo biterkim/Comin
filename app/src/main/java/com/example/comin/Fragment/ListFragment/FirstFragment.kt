@@ -26,15 +26,15 @@ class FirstFragment : Fragment() {
 
         val list_array = arrayListOf<ContentsListModel>(
 
-            ContentsListModel(R.drawable.list1,"Lang1",1,""),
-            ContentsListModel(R.drawable.list2,"Lang2",1,"d"),
-            ContentsListModel(R.drawable.list3,"Lang3",1,"d"),
-            ContentsListModel(R.drawable.list4,"Lang4",1,"d"),
-            ContentsListModel(R.drawable.list5,"Lang5",1,"d"),
-            ContentsListModel(R.drawable.list6,"Lang6",1,"d"),
-            ContentsListModel(R.drawable.list7,"Lang7",1,"d"),
-            ContentsListModel(R.drawable.list8,"Lang8",1,"d"),
-            ContentsListModel(R.drawable.list9,"Lang9",1,"d")
+//            ContentsListModel(R.drawable.list1,"Lang1",1,"", ""),
+//            ContentsListModel(R.drawable.list2,"Lang2",1,"d"),
+//            ContentsListModel(R.drawable.list3,"Lang3",1,"d"),
+//            ContentsListModel(R.drawable.list4,"Lang4",1,"d"),
+//            ContentsListModel(R.drawable.list5,"Lang5",1,"d"),
+//            ContentsListModel(R.drawable.list6,"Lang6",1,"d"),
+//            ContentsListModel(R.drawable.list7,"Lang7",1,"d"),
+//            ContentsListModel(R.drawable.list8,"Lang8",1,"d"),
+//            ContentsListModel(R.drawable.list9,"Lang9",1,"d")
 
         )
 

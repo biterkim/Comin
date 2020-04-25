@@ -24,16 +24,16 @@ class ThirdFragment : Fragment() {
         val view :View =inflater.inflate(R.layout.fragment_third, container, false);
 
         val list_array = arrayListOf<ContentsListModel>(
-
-            ContentsListModel(R.drawable.list3_1,"메가불닭치킨 고로케",1,""),
-            ContentsListModel(R.drawable.list3_2,"메가불닭참치 고로케",1,"d"),
-            ContentsListModel(R.drawable.list3_3,"메가불닭치킨 케이준",1,"d"),
-            ContentsListModel(R.drawable.list3_4,"메가불닭참치 케이준",1,"d"),
-            ContentsListModel(R.drawable.list3_5,"메가불닭치킨마요",1,"d"),
-            ContentsListModel(R.drawable.list3_6,"메가불닭참치마요",1,"d"),
-            ContentsListModel(R.drawable.list3_7,"피자불고기마요",1,"d"),
-            ContentsListModel(R.drawable.list3_8,"피자치킨마요",1,"d"),
-            ContentsListModel(R.drawable.list3_9,"갈비치킨마요",1,"d")
+//
+//            ContentsListModel(R.drawable.list3_1,"메가불닭치킨 고로케",1,""),
+//            ContentsListModel(R.drawable.list3_2,"메가불닭참치 고로케",1,"d"),
+//            ContentsListModel(R.drawable.list3_3,"메가불닭치킨 케이준",1,"d"),
+//            ContentsListModel(R.drawable.list3_4,"메가불닭참치 케이준",1,"d"),
+//            ContentsListModel(R.drawable.list3_5,"메가불닭치킨마요",1,"d"),
+//            ContentsListModel(R.drawable.list3_6,"메가불닭참치마요",1,"d"),
+//            ContentsListModel(R.drawable.list3_7,"피자불고기마요",1,"d"),
+//            ContentsListModel(R.drawable.list3_8,"피자치킨마요",1,"d"),
+//            ContentsListModel(R.drawable.list3_9,"갈비치킨마요",1,"d")
         )
 
         val list_adapter =
