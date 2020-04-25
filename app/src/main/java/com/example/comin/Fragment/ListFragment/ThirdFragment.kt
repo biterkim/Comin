@@ -37,7 +37,7 @@ class ThirdFragment : Fragment() {
         )
 
         val list_adapter =
-            FirstFragAdapter(
+            ThirdFragAdapter(
                 requireContext(),
                 list_array
             )
