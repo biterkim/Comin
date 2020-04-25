@@ -1,5 +1,5 @@
 package com.example.comin
-
+//맨 위에 광고
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View

@@ -15,9 +15,7 @@ class MainActivity : AppCompatActivity(){
 
     internal lateinit var viewpager : ViewPager
 
-    private lateinit var auth: FirebaseAuth// ...
-// Initialize Firebase Auth
-//ㅇ
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,14 +27,6 @@ class MainActivity : AppCompatActivity(){
             R.drawable.premium,
             R.drawable.square,
             R.drawable.treasure,
-//            R.drawable.id,
-//            R.drawable.jpg,
-//            R.drawable.js,
-//            R.drawable.mp4,
-//            R.drawable.pdf,
-//            R.drawable.php,
-//            R.drawable.png,
-//            R.drawable.psd,
             R.drawable.sidedish
         )
 
@@ -44,14 +34,6 @@ class MainActivity : AppCompatActivity(){
             "프리미엄 도시락",
             "사각 도시락",
             "보물 도시락",
-//            "id",
-//            "jpg",
-//            "js",
-//            "mp4",
-//            "pdf",
-//            "php",
-//            "png",
-//            "psd",
             "반찬 및 음료"
         )
 

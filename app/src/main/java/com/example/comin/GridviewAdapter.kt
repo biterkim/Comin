@@ -1,5 +1,5 @@
 package com.example.comin
-
+//프리미엄, 사각, 보물, 사이드 메뉴칸
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
