@@ -21,12 +21,12 @@ class LectureActivity : AppCompatActivity() {
             )
         list_viewpager.adapter = fragmentAdapter
 
-        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("AI")))
-        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("CSS")))
-        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("HTML")))
-        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("ID")))
-        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("JPG")))
-        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("JS")))
+        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("프리미엄")))
+        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("사각")))
+        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("보물")))
+        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("사이드")))
+//        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("JPG")))
+//        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("JS")))
 
         list_viewpager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tab_layout))
 
