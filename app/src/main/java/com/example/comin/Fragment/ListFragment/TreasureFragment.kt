@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.fragment_treasure.view.*
 /**
  * A simple [Fragment] subclass.
  */
-class TreasureFragment : Fragment() {
+class TreasureFragment : Fragment() { //
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
