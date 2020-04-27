@@ -11,7 +11,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.example.comin.R
 
-class ThirdFragAdapter(val context: Context, val list:ArrayList<ContentsListModel>) : BaseAdapter(){
+class TreasureFragAdapter(val context: Context, val list:ArrayList<ContentsListModel>) : BaseAdapter(){
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val view : View
         val holder : ViewHolder
