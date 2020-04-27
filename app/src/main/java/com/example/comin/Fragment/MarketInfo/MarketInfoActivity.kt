@@ -1,5 +1,6 @@
 package com.example.comin.Fragment.MarketInfo
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -77,33 +78,33 @@ class MarketInfoActivity : AppCompatActivity() {
             .replace(R.id.fragment_area, ContentFragment())
             .commit()
 
-        figure_1.setOnClickListener {
+        selection_menu.setOnClickListener {
 
-            figure_1.setTextSize(TypedValue.COMPLEX_UNIT_DIP,25f)
-            figure_2.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
-            figure_3.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
+            selection_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,25f)
+            information_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
+            review_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
 
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_area, ContentFragment())
                 .commit()
         }
 
-        figure_2.setOnClickListener {
+        information_menu.setOnClickListener {
 
-            figure_1.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
-            figure_2.setTextSize(TypedValue.COMPLEX_UNIT_DIP,25f)
-            figure_3.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
+            selection_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
+            information_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,25f)
+            review_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
 
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_area, InfoFragment())
                 .commit()
         }
 
-        figure_3.setOnClickListener {
+        review_menu.setOnClickListener {
 
-            figure_1.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
-            figure_2.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
-            figure_3.setTextSize(TypedValue.COMPLEX_UNIT_DIP,25f)
+            selection_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
+            information_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
+            review_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,25f)
 
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_area, ReviewFragment())
