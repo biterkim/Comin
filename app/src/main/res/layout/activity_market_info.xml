@@ -99,63 +99,91 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/menu_bar"
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/menu_bar"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/zzim"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/selection_menu"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            style="@style/CustomTextView"-->
+<!--            app:layout_constraintEnd_toStartOf="@id/information_menu"-->
+<!--            app:layout_constraintHorizontal_weight="1"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            android:text="선택 현황"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/information_menu"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            style="@style/CustomTextView"-->
+<!--            app:layout_constraintEnd_toStartOf="@id/review_menu"-->
+<!--            app:layout_constraintHorizontal_weight="1"-->
+<!--            app:layout_constraintStart_toEndOf="@id/selection_menu"-->
+<!--            android:text="정보"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/review_menu"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            style="@style/CustomTextView"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_weight="1"-->
+<!--            app:layout_constraintStart_toEndOf="@id/information_menu"-->
+<!--            android:text="리뷰"/>-->
+
+
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/content_area"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/zzim"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+    <TextView
+        android:id="@+id/info_title"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/zzim"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="제품 정보" />
+
+    <TextView
+        android:id="@+id/food_information"
         android:layout_width="match_parent"
-        android:layout_height="60dp">
-
-        <TextView
-            android:id="@+id/selection_menu"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            style="@style/CustomTextView"
-            app:layout_constraintEnd_toStartOf="@id/information_menu"
-            app:layout_constraintHorizontal_weight="1"
-            app:layout_constraintStart_toStartOf="parent"
-            android:text="선택 현황"/>
-
-        <TextView
-            android:id="@+id/information_menu"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            style="@style/CustomTextView"
-            app:layout_constraintEnd_toStartOf="@id/review_menu"
-            app:layout_constraintHorizontal_weight="1"
-            app:layout_constraintStart_toEndOf="@id/selection_menu"
-            android:text="정보"/>
-
-        <TextView
-            android:id="@+id/review_menu"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            style="@style/CustomTextView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_weight="1"
-            app:layout_constraintStart_toEndOf="@id/information_menu"
-            android:text="리뷰"/>
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/info_title"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="아아아아아아앙설명설명아아아아아아아"/>
 
 
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/content_area"
-        app:layout_constraintTop_toBottomOf="@+id/menu_bar"
+    <Button
+        android:id="@+id/buy_button"
+        android:text="구매하기"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        app:layout_constraintTop_toBottomOf="@+id/food_information"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#92cfbf"
+        android:layout_height="60dp"/>
 
-        <FrameLayout
-            android:id="@+id/fragment_area"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:ignore="MissingConstraints"/>
 
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
