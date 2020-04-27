@@ -12,7 +12,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.comin.R
 
-class SecondFragAdapter(val context : Context, val list:ArrayList<ContentsListModel>) : BaseAdapter(){ //h
+class Side_Menu_FragAdapter(val context : Context, val list:ArrayList<ContentsListModel>) : BaseAdapter(){ //h
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val view : View
         val holder : ViewHolder

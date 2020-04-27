@@ -41,7 +41,7 @@ class Side_Menu_Fragment : Fragment() {//
         )
 
         val list_adapter =
-            SecondFragAdapter(
+            Side_Menu_FragAdapter(
                 requireContext(),
                 list_array
             )
@@ -82,6 +82,8 @@ class Side_Menu_Fragment : Fragment() {//
         view.listview_side_menu_fragment.setOnItemClickListener { adapterView, view,i, l ->
 
             val intent = Intent(requireContext(),MarketInfoActivity::class.java)
+            intent.putExtra("category",list_array.get(i).category)
+            intent.putExtra("price",list_array.get(i).price)//제품도 가격마다 바꾸기 위함
             intent.putExtra("title",list_array.get(i).title)
             startActivity(intent)
         }
