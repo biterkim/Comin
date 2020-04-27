@@ -1,6 +1,6 @@
 package com.example.comin.Fragment.ListFragment
 
-import android.content.ContentValues.TAG
+import android.content.ContentValues
 import android.content.Context
 import android.util.Log
 import android.view.LayoutInflater
@@ -11,17 +11,17 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.example.comin.R
 
-class FirstFragAdapter(val context: Context, val list:ArrayList<ContentsListModel>) : BaseAdapter(){
+class PremiumFragAdapter (val context: Context, val list:ArrayList<ContentsListModel>) : BaseAdapter() {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val view : View
-        val holder : ViewHolder
+        val holder : PremiumFragAdapter.ViewHolder
 
         if( convertView == null) {
 
             view = LayoutInflater.from(context).inflate(R.layout.listview_item, null)
 
             holder =
-                ViewHolder()
+                PremiumFragAdapter.ViewHolder()
 
             holder.view_iamgel = view.findViewById(R.id.lv_image_area)
             holder.view_text1 = view.findViewById(R.id.lv_textview_1)
@@ -30,12 +30,12 @@ class FirstFragAdapter(val context: Context, val list:ArrayList<ContentsListMode
 
             view.tag = holder
         } else {
-            holder = convertView.tag as ViewHolder
+            holder = convertView.tag as PremiumFragAdapter.ViewHolder
             view = convertView
         }
         val item = list[position]
 
-        Log.e(TAG, item.image.toString())
+        Log.e(ContentValues.TAG, item.image.toString())
 
         holder.view_iamgel?.setImageResource(item.image)
         holder.view_text1?.text = item.title
@@ -63,6 +63,5 @@ class FirstFragAdapter(val context: Context, val list:ArrayList<ContentsListMode
         var view_text3 : TextView? = null
 
     }
-
 
 }

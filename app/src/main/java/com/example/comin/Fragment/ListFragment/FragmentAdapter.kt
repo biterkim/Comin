@@ -8,7 +8,7 @@ class FragmentAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm){
     override fun getItem(position: Int): Fragment {
         return  when(position) {
             0->{
-                FirstFragment() // 프리미엄도시락
+                PremiumFragment() // 프리미엄도시락
             }
             1->{
                 SquareFragment() // 사각도시락
