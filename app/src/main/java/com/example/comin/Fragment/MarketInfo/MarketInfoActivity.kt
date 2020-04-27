@@ -23,6 +23,7 @@ class MarketInfoActivity : AppCompatActivity() {
 
         lecture_text.text = intent.getStringExtra("title")
         lecture_review_count.text = intent.getStringExtra("category")//카테고리 변경을 위함
+        food_information.text = intent.getStringExtra("information")
         price_real_text.text = intent.getStringExtra("price")//제품마다 가격도 변경해주기 위함
 
         FirebaseUtils.db
@@ -78,38 +79,38 @@ class MarketInfoActivity : AppCompatActivity() {
             .replace(R.id.fragment_area, ContentFragment())
             .commit()
 
-        selection_menu.setOnClickListener {
-
-            selection_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,25f)
-            information_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
-            review_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
-
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_area, ContentFragment())
-                .commit()
-        }
-
-        information_menu.setOnClickListener {
-
-            selection_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
-            information_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,25f)
-            review_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
-
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_area, InfoFragment())
-                .commit()
-        }
-
-        review_menu.setOnClickListener {
-
-            selection_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
-            information_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
-            review_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,25f)
-
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_area, ReviewFragment())
-                .commit()
-        }
+//        selection_menu.setOnClickListener {
+//
+//            selection_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,25f)
+//            information_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
+//            review_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
+//
+//            supportFragmentManager.beginTransaction()
+//                .replace(R.id.fragment_area, ContentFragment())
+//                .commit()
+//        }
+//
+//        information_menu.setOnClickListener {
+//
+//            selection_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
+//            information_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,25f)
+//            review_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
+//
+//            supportFragmentManager.beginTransaction()
+//                .replace(R.id.fragment_area, InfoFragment())
+//                .commit()
+//        }
+//
+//        review_menu.setOnClickListener {
+//
+//            selection_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
+//            information_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
+//            review_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,25f)
+//
+//            supportFragmentManager.beginTransaction()
+//                .replace(R.id.fragment_area, ReviewFragment())
+//                .commit()
+//        }
 
     }
 }
