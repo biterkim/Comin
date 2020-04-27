@@ -10,7 +10,6 @@ import com.example.comin.Fragment.MarketInfo.MarketInfoActivity
 
 import com.example.comin.R
 import com.example.comin.Utils.FirebaseUtils
-import kotlinx.android.synthetic.main.fragment_first.view.*
 import kotlinx.android.synthetic.main.fragment_square.view.*
 
 /**
@@ -25,32 +24,32 @@ class SquareFragment : Fragment() {
         // Inflate the layout for this fragment
 
         val view :View = inflater.inflate(R.layout.fragment_square, container, false)
-
+        val category = "사각도시락"
         val list_array = arrayListOf<ContentsListModel>(
 
-            ContentsListModel(R.drawable.square1,"메가고기고기",1,""),
-            ContentsListModel(R.drawable.square2,"생선까스도련님고기고기",1,"d"),
-            ContentsListModel(R.drawable.square3,"돈까스도련님고기고기",1,"d"),
-            ContentsListModel(R.drawable.square4,"탕수육도련님고기고기",1,"d"),
-            ContentsListModel(R.drawable.square5,"새치 고기고기",1,"d"),
-            ContentsListModel(R.drawable.square6,"돈치 고기고기",1,"d"),
-            ContentsListModel(R.drawable.square7,"고기고기",1,"d"),
-            ContentsListModel(R.drawable.square8,"제육 김치찌개 정식",1,"d"),
-            ContentsListModel(R.drawable.square9,"고등어 불고기 정식",1,"d"),
-            ContentsListModel(R.drawable.square10,"콤비네이션 정식",1,"d"),
-            ContentsListModel(R.drawable.square11,"숯불직화구이",1,"d"),
-            ContentsListModel(R.drawable.square12,"소불고기",1,"d"),
-            ContentsListModel(R.drawable.square13,"메가치킨제육",1,"d"),
-            ContentsListModel(R.drawable.square14,"생선까스도련님",1,"d"),
-            ContentsListModel(R.drawable.square15,"칠리 찹쌀탕수육도련님",1,"d"),
-            ContentsListModel(R.drawable.square16,"오리지널 찹쌀탕수육",1,"d"),
-            ContentsListModel(R.drawable.square17,"동백",1,"d"),
-            ContentsListModel(R.drawable.square18,"치킨제육",1,"d"),
-            ContentsListModel(R.drawable.square19,"국화",1,"d"),
-            ContentsListModel(R.drawable.square20,"돈까스도련님",1,"d"),
-            ContentsListModel(R.drawable.square21,"제육볶음",1,"d"),
-            ContentsListModel(R.drawable.square22,"한솥밥",1,"d"),
-            ContentsListModel(R.drawable.square23,"현미밥",1,"d")
+            ContentsListModel(R.drawable.square1,"메가고기고기",1,"7,900원", category),
+            ContentsListModel(R.drawable.square2,"생선까스도련님고기고기",1,"5,500원", category),
+            ContentsListModel(R.drawable.square3,"돈까스도련님고기고기",1,"5,500원", category),
+            ContentsListModel(R.drawable.square4,"탕수육도련님고기고기",1,"5,600원",category),
+            ContentsListModel(R.drawable.square5,"새치 고기고기",1,"6,000원",category),
+            ContentsListModel(R.drawable.square6,"돈치 고기고기",1,"5,200원",category),
+            ContentsListModel(R.drawable.square7,"고기고기",1,"4,000원",category),
+            ContentsListModel(R.drawable.square8,"제육 김치찌개 정식",1,"8,000원",category),
+            ContentsListModel(R.drawable.square9,"고등어 불고기 정식",1,"7,000원",category),
+            ContentsListModel(R.drawable.square10,"콤비네이션 정식",1,"6,000원",category),
+            ContentsListModel(R.drawable.square11,"숯불직화구이",1,"6,500원",category),
+            ContentsListModel(R.drawable.square12,"소불고기",1,"5,000원",category),
+            ContentsListModel(R.drawable.square13,"메가치킨제육",1,"6,900원",category),
+            ContentsListModel(R.drawable.square14,"생선까스도련님",1,"3,900원",category),
+            ContentsListModel(R.drawable.square15,"칠리 찹쌀탕수육도련님",1,"4,000원",category),
+            ContentsListModel(R.drawable.square16,"오리지널 찹쌀탕수육",1,"4,700원",category),
+            ContentsListModel(R.drawable.square17,"동백",1,"5,000원",category),
+            ContentsListModel(R.drawable.square18,"치킨제육",1,"4,400원",category),
+            ContentsListModel(R.drawable.square19,"국화",1,"4,200원",category),
+            ContentsListModel(R.drawable.square20,"돈까스도련님",1,"3,900원",category),
+            ContentsListModel(R.drawable.square21,"제육볶음",1,"3,900원",category),
+            ContentsListModel(R.drawable.square22,"한솥밥",1,"1,000원",category),
+            ContentsListModel(R.drawable.square23,"현미밥",1,"1,700원",category)
 
 
         )
@@ -111,6 +110,8 @@ class SquareFragment : Fragment() {
 
             val intent = Intent(requireContext(), MarketInfoActivity::class.java)
             intent.putExtra("title",list_array.get(i).title)
+            intent.putExtra("category",list_array.get(i).category)
+            intent.putExtra("price",list_array.get(i).price)//제품도 가격마다 바꾸기 위함
             startActivity(intent)
 
         }

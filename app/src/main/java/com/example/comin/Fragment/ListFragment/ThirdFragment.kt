@@ -22,18 +22,18 @@ class ThirdFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view :View =inflater.inflate(R.layout.fragment_third, container, false);
-
+        val category = "보물도시락"
         val list_array = arrayListOf<ContentsListModel>(
 
-            ContentsListModel(R.drawable.list3_1,"메가불닭치킨 고로케",1,""),
-            ContentsListModel(R.drawable.list3_2,"메가불닭참치 고로케",1,"d"),
-            ContentsListModel(R.drawable.list3_3,"메가불닭치킨 케이준",1,"d"),
-            ContentsListModel(R.drawable.list3_4,"메가불닭참치 케이준",1,"d"),
-            ContentsListModel(R.drawable.list3_5,"메가불닭치킨마요",1,"d"),
-            ContentsListModel(R.drawable.list3_6,"메가불닭참치마요",1,"d"),
-            ContentsListModel(R.drawable.list3_7,"피자불고기마요",1,"d"),
-            ContentsListModel(R.drawable.list3_8,"피자치킨마요",1,"d"),
-            ContentsListModel(R.drawable.list3_9,"갈비치킨마요",1,"d")
+            ContentsListModel(R.drawable.list3_1,"메가불닭치킨 고로케",1,"8200원",category),
+            ContentsListModel(R.drawable.list3_2,"메가불닭참치 고로케",1,"8200원",category),
+            ContentsListModel(R.drawable.list3_3,"메가불닭치킨 케이준",1,"7700원",category),
+            ContentsListModel(R.drawable.list3_4,"메가불닭참치 케이준",1,"7700원",category),
+            ContentsListModel(R.drawable.list3_5,"메가불닭치킨마요",1,"6400원",category),
+            ContentsListModel(R.drawable.list3_6,"메가불닭참치마요",1,"6400원",category),
+            ContentsListModel(R.drawable.list3_7,"피자불고기마요",1,"4700원",category),
+            ContentsListModel(R.drawable.list3_8,"피자치킨마요",1,"4500원",category),
+            ContentsListModel(R.drawable.list3_9,"갈비치킨마요",1,"3200원",category)
         )
 
         val list_adapter =
