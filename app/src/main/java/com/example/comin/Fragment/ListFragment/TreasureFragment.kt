@@ -9,19 +9,19 @@ import android.view.ViewGroup
 import com.example.comin.Fragment.MarketInfo.MarketInfoActivity
 import com.example.comin.R
 import com.example.comin.Utils.FirebaseUtils
-import kotlinx.android.synthetic.main.fragment_third.view.*
+import kotlinx.android.synthetic.main.fragment_treasure.view.*
 
 /**
  * A simple [Fragment] subclass.
  */
-class ThirdFragment : Fragment() {
+class TreasureFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view :View =inflater.inflate(R.layout.fragment_third, container, false);
+        val view :View =inflater.inflate(R.layout.fragment_treasure, container, false);
         val category = "보물도시락"
         val list_array = arrayListOf<ContentsListModel>(
 
@@ -37,11 +37,11 @@ class ThirdFragment : Fragment() {
         )
 
         val list_adapter =
-            ThirdFragAdapter(
+            TreasureFragAdapter(
                 requireContext(),
                 list_array
             )
-        view.listview_third_fragment.adapter = list_adapter
+        view.listview_treasure_fragment.adapter = list_adapter
 
         FirebaseUtils.db
             .collection("zzim")
@@ -74,7 +74,7 @@ class ThirdFragment : Fragment() {
             }
             .addOnFailureListener {  }
 
-        view.listview_third_fragment.setOnItemClickListener { adapterView, view,i, l ->
+        view.listview_treasure_fragment.setOnItemClickListener { adapterView, view,i, l ->
 
             val intent = Intent(requireContext(), MarketInfoActivity::class.java)
             intent.putExtra("title",list_array.get(i).title)

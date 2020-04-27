@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.ListFragment.ThirdFragment">
+    tools:context=".Fragment.ListFragment.TreasureFragment">
 
     <ListView
-        android:id="@+id/listview_third_fragment"
+        android:id="@+id/listview_treasure_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

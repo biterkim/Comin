@@ -14,7 +14,7 @@ class FragmentAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm){
                 SquareFragment() // 사각도시락
             }
             2->{
-                ThirdFragment() // 보물도시락
+                TreasureFragment() // 보물도시락
             }
             else -> {
                 Side_Menu_Fragment() //사이드메뉴
