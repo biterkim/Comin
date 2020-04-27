@@ -78,7 +78,7 @@ class TreasureFragment : Fragment() { //
 
             val intent = Intent(requireContext(), MarketInfoActivity::class.java)
             intent.putExtra("title",list_array.get(i).title)
-            intent.putExtra("category",list_array.get(i).category)
+            intent.putExtra("information",list_array.get(i).information)
             intent.putExtra("price",list_array.get(i).price)//제품도 가격마다 바꾸기 위함
             startActivity(intent)
 

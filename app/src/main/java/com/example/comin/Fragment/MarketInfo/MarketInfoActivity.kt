@@ -75,9 +75,9 @@ class MarketInfoActivity : AppCompatActivity() {
             }
         }
 
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.fragment_area, ContentFragment())
-            .commit()
+//        supportFragmentManager.beginTransaction()
+//            .replace(R.id.fragment_area, ContentFragment())
+//            .commit()
 
 //        selection_menu.setOnClickListener {
 //
