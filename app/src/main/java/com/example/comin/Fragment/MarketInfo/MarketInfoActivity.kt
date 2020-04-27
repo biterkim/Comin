@@ -5,6 +5,7 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.TypedValue
+import android.widget.TextView
 import android.widget.Toast
 import com.example.comin.R
 import com.example.comin.Utils.FirebaseUtils
@@ -33,7 +34,7 @@ class MarketInfoActivity : AppCompatActivity() {
 
                 if(documentSnapshot.get(intent.getStringExtra("title"))==true){
 
-                    header_zzim.text = "하트뿅뿅 찜 되었습니다."
+                    header_zzim.text =  "하트뿅뿅 찜 되었습니다."
                     header_zzim.setTextColor(Color.BLUE)
                 }
 
@@ -94,6 +95,7 @@ class MarketInfoActivity : AppCompatActivity() {
             selection_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
             information_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,25f)
             review_menu.setTextSize(TypedValue.COMPLEX_UNIT_DIP,15f)
+
 
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_area, InfoFragment())
