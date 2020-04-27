@@ -9,12 +9,12 @@ import android.view.ViewGroup
 import com.example.comin.Fragment.MarketInfo.MarketInfoActivity
 import com.example.comin.R
 import com.example.comin.Utils.FirebaseUtils
-import kotlinx.android.synthetic.main.fragment_second.view.*
+import kotlinx.android.synthetic.main.fragment_side_menu.view.*
 
 /**
  * A simple [Fragment] subclass.
  */
-class SecondFragment : Fragment() {//
+class Side_Menu_Fragment : Fragment() {//
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -22,7 +22,7 @@ class SecondFragment : Fragment() {//
     ): View? {
         // Inflate the layout for this fragment
 
-        val view : View = inflater.inflate(R.layout.fragment_second,container,false)
+        val view : View = inflater.inflate(R.layout.fragment_side_menu,container,false)
         val category = "반찬및음료"
         val list_array = arrayListOf<ContentsListModel>(
 
@@ -45,7 +45,7 @@ class SecondFragment : Fragment() {//
                 requireContext(),
                 list_array
             )
-        view.listview_second_fragment.adapter = list_adapter
+        view.listview_side_menu_fragment.adapter = list_adapter
 
         FirebaseUtils.db
             .collection("zzim")
@@ -79,7 +79,7 @@ class SecondFragment : Fragment() {//
             }
             .addOnFailureListener { }
 
-        view.listview_second_fragment.setOnItemClickListener { adapterView, view,i, l ->
+        view.listview_side_menu_fragment.setOnItemClickListener { adapterView, view,i, l ->
 
             val intent = Intent(requireContext(),MarketInfoActivity::class.java)
             intent.putExtra("title",list_array.get(i).title)

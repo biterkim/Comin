@@ -17,7 +17,7 @@ class FragmentAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm){
                 ThirdFragment() // 보물도시락
             }
             else -> {
-                SecondFragment() //사이드메뉴
+                Side_Menu_Fragment() //사이드메뉴
             }
         }
 
