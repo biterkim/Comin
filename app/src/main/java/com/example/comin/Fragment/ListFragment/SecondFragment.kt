@@ -23,20 +23,20 @@ class SecondFragment : Fragment() {//
         // Inflate the layout for this fragment
 
         val view : View = inflater.inflate(R.layout.fragment_second,container,false)
-
+        val category = "반찬및음료"
         val list_array = arrayListOf<ContentsListModel>(
 
-            ContentsListModel(R.drawable.second1,"치킨샐러드",1,""),
-            ContentsListModel(R.drawable.second2,"계란말이",1,"d"),
-            ContentsListModel(R.drawable.second3,"해물파전",1,"d"),
-            ContentsListModel(R.drawable.second4,"군만두",1,"d"),
-            ContentsListModel(R.drawable.second5,"핫도그",1,"d"),
-            ContentsListModel(R.drawable.second6,"카레",1,"d"),
-            ContentsListModel(R.drawable.second7,"김치찌개",1,"d"),
-            ContentsListModel(R.drawable.second8,"녹두전",1,"d"),
-            ContentsListModel(R.drawable.second9,"오징어젓갈",1,"d"),
-            ContentsListModel(R.drawable.second10,"김치",1,"d"),
-            ContentsListModel(R.drawable.second11,"콜라 및 사이다",1,"d")
+            ContentsListModel(R.drawable.second1,"치킨샐러드",1,"3600원",category),
+            ContentsListModel(R.drawable.second2,"계란말이",1,"2200원",category),
+            ContentsListModel(R.drawable.second3,"해물파전",1,"2200원",category),
+            ContentsListModel(R.drawable.second4,"군만두",1,"2000원",category),
+            ContentsListModel(R.drawable.second5,"핫도그",1,"2500원",category),
+            ContentsListModel(R.drawable.second6,"카레",1,"2400원",category),
+            ContentsListModel(R.drawable.second7,"김치찌개",1,"3900원",category),
+            ContentsListModel(R.drawable.second8,"녹두전",1,"2700원",category),
+            ContentsListModel(R.drawable.second9,"오징어젓갈",1,"400원",category),
+            ContentsListModel(R.drawable.second10,"김치",1,"300원",category),
+            ContentsListModel(R.drawable.second11,"콜라 및 사이다",1,"1500원",category)
 
         )
 
