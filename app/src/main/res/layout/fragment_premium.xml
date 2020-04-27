@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.ListFragment.FirstFragment">
+    tools:context=".Fragment.ListFragment.PremiumFragment">
 
     <ListView
-        android:id="@+id/listview_first_fragment"
+        android:id="@+id/listview_premium_fragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
 </FrameLayout>
