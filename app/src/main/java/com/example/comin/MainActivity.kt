@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity(){
 
 
             val intent = Intent(this, LectureActivity::class.java)
-            intent.putExtra("grid_p",i);
+            intent.putExtra("grid_p",i); // 내가 클릭한 그리드뷰(도시락 4종류)의 postion을 LecturActivity로 넘겨준다 grid_p
             startActivity(intent)
 
         }
