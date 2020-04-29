@@ -1,13 +1,15 @@
 package com.example.comin
 //test 중 중dd
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.comin.Fragment.ListFragment.FragmentAdapter
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.activity_lecture.*
 import kotlinx.android.synthetic.main.custom_tab.view.*
+
 
 class LectureActivity : AppCompatActivity() {
 
@@ -21,6 +23,8 @@ class LectureActivity : AppCompatActivity() {
             )
         list_viewpager.adapter = fragmentAdapter
 
+
+
         tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("프리미엄")))
         tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("사각")))
         tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("보물")))
@@ -28,7 +32,12 @@ class LectureActivity : AppCompatActivity() {
 //        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("JPG")))
 //        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("JS")))
 
+
         list_viewpager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tab_layout))
+
+        list_viewpager.currentItem = intent.getIntExtra("grid_p",0)
+
+
 
         tab_layout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabReselected(p0: TabLayout.Tab?) {
@@ -43,6 +52,7 @@ class LectureActivity : AppCompatActivity() {
                 }
 
             }
+
 
         })
 

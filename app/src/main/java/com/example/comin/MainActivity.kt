@@ -42,7 +42,9 @@ class MainActivity : AppCompatActivity(){
 
         gridview.setOnItemClickListener { adapterView, view, i, l ->
 
+
             val intent = Intent(this, LectureActivity::class.java)
+            intent.putExtra("grid_p",i);
             startActivity(intent)
 
         }
