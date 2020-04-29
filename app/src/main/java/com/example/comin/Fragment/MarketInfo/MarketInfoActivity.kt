@@ -48,7 +48,7 @@ class MarketInfoActivity : AppCompatActivity() {
             }
 
         plus_button.setOnClickListener {
-            var count=Int.parseInt(countText.text.toString())
+            var count=Integer.parseInt(countText.text.toString())
             count++
 
             countText.text = count.toString()
@@ -130,12 +130,5 @@ class MarketInfoActivity : AppCompatActivity() {
     }
 
 }
-
-private fun Int.Companion.parseInt(toString: String): Any {
-
-}
-
-
-
 
 
