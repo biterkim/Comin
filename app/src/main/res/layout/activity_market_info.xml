@@ -171,19 +171,18 @@
 
     <Button
         android:id="@+id/buy_button"
-        android:text="구매하기"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#92cfbf"
+        android:text="장바구니 담기"
         android:textColor="#ffffff"
         android:textSize="15dp"
-        android:layout_width="match_parent"
-        app:layout_constraintTop_toBottomOf="@+id/food_information"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:background="#92cfbf"
-        android:layout_height="60dp"/>
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="655dp"
+        tools:ignore="MissingConstraints" />
 
 
-<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
