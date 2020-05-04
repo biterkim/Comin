@@ -55,7 +55,8 @@ class MarketInfoActivity : AppCompatActivity() {
 
         minus_button.setOnClickListener {
             var count =Integer.parseInt(count_text.text.toString())
-            count--
+            if(count>1)
+                count--
             count_text.setText(count.toString())
         }
 
