@@ -51,7 +51,7 @@ class MarketInfoActivity : AppCompatActivity() {
             var count=Integer.parseInt(countText.text.toString())
             count++
 
-            countText.text = count.toString()
+           // countText.text = count.toString()
 
         }
 
