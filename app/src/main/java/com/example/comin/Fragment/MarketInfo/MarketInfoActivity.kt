@@ -60,6 +60,10 @@ class MarketInfoActivity : AppCompatActivity() {
             count_text.setText(count.toString())
         }
 
+        basket_button.setOnClickListener {
+
+        }
+
         zzim.setOnClickListener {
 
             if (header_zzim.text.equals("하트뿅뿅 찜 되었습니다.")) {
