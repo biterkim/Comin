@@ -47,13 +47,13 @@ class MarketInfoActivity : AppCompatActivity() {
 
             }
 
-        plus_button.setOnClickListener {
-            var count=Int.parseInt(countText.text.toString())
-            count++
+    plus_button.setOnClickListener {
+        var count=Int.parseInt(countText.text.toString()) as Int
+        count++
 
-            countText.text = count.toString()
+        countText.setText(count.toString())
 
-        }
+    }
 
         zzim.setOnClickListener {
 
