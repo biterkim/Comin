@@ -2,9 +2,13 @@ package com.example.comin.Fragment.MarketInfo
 //
 import android.content.Intent
 import android.graphics.Color
+import android.icu.text.Transliterator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
 import android.util.TypedValue
+import android.view.View
+import android.widget.EditText
 import android.widget.Toast
 import com.example.comin.R
 import com.example.comin.Utils.FirebaseUtils
@@ -14,12 +18,15 @@ import kotlinx.android.synthetic.main.activity_market_info.*
 
 class MarketInfoActivity : AppCompatActivity() {
 
+
     private val auth = FirebaseAuth.getInstance()
     private val db = FirebaseFirestore.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_market_info)
+
+        var countText = findViewById(R.id.count_text) as EditText
 
         lecture_text.text = intent.getStringExtra("title")
         lecture_review_count.text = intent.getStringExtra("category")//카테고리 변경을 위함
@@ -39,6 +46,14 @@ class MarketInfoActivity : AppCompatActivity() {
                 }
 
             }
+
+        plus_button.setOnClickListener {
+            var count=Int.parseInt(countText.text.toString())
+            count++
+
+            countText.text = count.toString()
+
+        }
 
         zzim.setOnClickListener {
 
@@ -113,4 +128,14 @@ class MarketInfoActivity : AppCompatActivity() {
 //        }
 
     }
+
 }
+
+private fun Int.Companion.parseInt(toString: String): Any {
+
+}
+
+
+
+
+
