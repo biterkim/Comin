@@ -26,7 +26,6 @@ class MarketInfoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_market_info)
 
-        var countText = findViewById(R.id.count_text) as EditText
 
         lecture_text.text = intent.getStringExtra("title")
         lecture_review_count.text = intent.getStringExtra("category")//카테고리 변경을 위함
@@ -47,19 +46,17 @@ class MarketInfoActivity : AppCompatActivity() {
 
             }
 
-    plus_button.setOnClickListener {
-        var count=countText.text.toString() as Int
-        count++
+       plus_button.setOnClickListener {
+           var count =Integer.parseInt(count_text.text.toString())
+            count++
+            count_text.setText(count.toString())
 
-        countText.setText(count.toString())
-
-    }
+        }
 
         minus_button.setOnClickListener {
-            var count=countText.text.toString() as Int
+            var count =Integer.parseInt(count_text.text.toString())
             count--
-
-            countText.setText(count.toString())
+            count_text.setText(count.toString())
         }
 
         zzim.setOnClickListener {
