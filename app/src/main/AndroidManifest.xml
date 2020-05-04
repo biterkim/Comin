@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BuyHistory.BuyHistoryActivity"></activity>
+        <activity android:name=".SoppingCart.ShoppingCartActivity"></activity>
+        <activity android:name=".BuyHistory.BuyHistoryActivity" />
         <activity android:name=".Zzim.ZzimActivity" />
         <activity android:name=".Fragment.MarketInfo.WriteActivity" />
         <activity android:name=".Auth.JoinInfoActivity" />

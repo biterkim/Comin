@@ -2,15 +2,11 @@ package com.example.comin.Fragment.MarketInfo
 //
 import android.content.Intent
 import android.graphics.Color
-import android.icu.text.Transliterator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
-import android.util.TypedValue
-import android.view.View
-import android.widget.EditText
 import android.widget.Toast
 import com.example.comin.R
+import com.example.comin.SoppingCart.ShoppingCartActivity
 import com.example.comin.Utils.FirebaseUtils
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -61,7 +57,8 @@ class MarketInfoActivity : AppCompatActivity() {
         }
 
         basket_button.setOnClickListener {
-
+            val intent = Intent(this, ShoppingCartActivity::class.java)
+            startActivity(intent)
         }
 
         zzim.setOnClickListener {
