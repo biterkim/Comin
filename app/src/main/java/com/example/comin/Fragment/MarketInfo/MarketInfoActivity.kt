@@ -55,6 +55,13 @@ class MarketInfoActivity : AppCompatActivity() {
 
     }
 
+        minus_button.setOnClickListener {
+            var count=Int.parseInt(countText.text.toString()) as Int
+            count--
+
+            countText.setText(count.toString())
+        }
+
         zzim.setOnClickListener {
 
             if (header_zzim.text.equals("하트뿅뿅 찜 되었습니다.")) {
