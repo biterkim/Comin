@@ -3,6 +3,8 @@
     package="com.example.comin">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SoppingCart.ShoppingCartActivity"></activity>
+        <activity android:name=".SoppingCart.KakaoPayActivity"></activity>
+        <activity android:name=".SoppingCart.ShoppingCartActivity" />
         <activity android:name=".BuyHistory.BuyHistoryActivity" />
         <activity android:name=".Zzim.ZzimActivity" />
         <activity android:name=".Fragment.MarketInfo.WriteActivity" />

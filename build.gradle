@@ -21,7 +21,8 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+        //부트페이
+        maven { url 'https://jitpack.io' }
     }
 }
 
