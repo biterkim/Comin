@@ -20,7 +20,7 @@ import kr.co.bootpay.model.BootExtra
 import kr.co.bootpay.model.BootUser
 
 class KakaoPayActivity : AppCompatActivity() {
-
+ //
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kakao_pay)
