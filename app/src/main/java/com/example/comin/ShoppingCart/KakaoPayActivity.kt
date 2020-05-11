@@ -1,4 +1,4 @@
-package com.example.comin.SoppingCart
+package com.example.comin.ShoppingCart
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -20,7 +20,7 @@ import kr.co.bootpay.model.BootExtra
 import kr.co.bootpay.model.BootUser
 
 class KakaoPayActivity : AppCompatActivity() {
- //
+    //
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kakao_pay)
@@ -29,7 +29,8 @@ class KakaoPayActivity : AppCompatActivity() {
         var menu = intent.getStringExtra("menu")
         var price = intent.getIntExtra("price", 0)
 
-        BootpayAnalytics.init(this, "59a4d326396fa607cbe75de5");
+
+        BootpayAnalytics.init(this, "59a4d326396fa607cbe75de5")
 
         kakaoPay(menu, price)
     }
@@ -37,7 +38,7 @@ class KakaoPayActivity : AppCompatActivity() {
     fun kakaoPay(menu: String, price: Int) {
         // 결제호출
         var bootUser = BootUser().setPhone("010-1234-5678");
-        var bootExtra = BootExtra().setQuotas(IntArray(3) { 0;2;3 });//할부
+        var bootExtra = BootExtra().setQuotas(IntArray(3) { 0;2;3 })//할부
 
         Bootpay.init(getFragmentManager())
             .setApplicationId("59a4d326396fa607cbe75de5") // 해당 프로젝트(안드로이드)의 application id 값

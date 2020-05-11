@@ -41,19 +41,21 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/price_area"
         android:layout_width="match_parent"
-        app:layout_constraintTop_toBottomOf="@+id/header_line"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_line">
 
         <TextView
             android:id="@+id/price_text"
-            android:text="금액"
             android:layout_width="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="금액"
             android:textColor="#000000"
             android:textSize="15dp"
-            android:layout_margin="30dp"
-            android:layout_height="wrap_content"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/price_real_text"
@@ -63,9 +65,8 @@
             android:text="25,000원"
             android:textColor="#000000"
             android:textSize="15dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toRightOf="@+id/price_text"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBaseline_toBaselineOf="@+id/price_text"
+            app:layout_constraintLeft_toRightOf="@+id/price_text" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -176,6 +177,8 @@
         android:text="장바구니 담기"
         android:textColor="#ffffff"
         android:textSize="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="MissingConstraints" />
@@ -186,6 +189,8 @@
         android:layout_height="50dp"
         android:text="-"
         android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
         app:layout_constraintBottom_toTopOf="@+id/basket_button"
         app:layout_constraintRight_toLeftOf="@+id/count_text" />
 
@@ -195,6 +200,7 @@
         android:id="@+id/plus_button"
         android:text="+"
         android:textSize="20dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintLeft_toRightOf="@+id/count_text"
         app:layout_constraintBottom_toTopOf="@+id/basket_button"/>
 
@@ -205,6 +211,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:inputType="number"
+        android:layout_marginBottom="10dp"
         android:text="1"
         app:layout_constraintBottom_toTopOf="@+id/basket_button"
         app:layout_constraintEnd_toEndOf="parent"
