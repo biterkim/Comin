@@ -17,10 +17,10 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/lv_image_area"
-        android:src="@drawable/ai"
-        android:layout_margin="20dp"
         android:layout_width="80dp"
-        android:layout_height="80dp"/>
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/heart_img" />
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -29,8 +29,6 @@ class LectureActivity : AppCompatActivity() {
         tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("사각")))
         tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("보물")))
         tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("사이드")))
-//        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("JPG")))
-//        tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("JS")))
 
 
         list_viewpager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tab_layout))
