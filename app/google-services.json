@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "891713971707",
-    "firebase_url": "https://comin-a7d49.firebaseio.com",
-    "project_id": "comin-a7d49",
-    "storage_bucket": "comin-a7d49.appspot.com"
+    "project_number": "486491869456",
+    "firebase_url": "https://comin-a4335.firebaseio.com",
+    "project_id": "comin-a4335",
+    "storage_bucket": "comin-a4335.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:891713971707:android:9b7a2c689c9b82c851d75e",
+        "mobilesdk_app_id": "1:486491869456:android:01bb9ad1c5d3013c7ed595",
         "android_client_info": {
           "package_name": "com.example.comin"
         }
       },
       "oauth_client": [
         {
-          "client_id": "891713971707-kmlg8d8b5nkk56nv646a8ma4ajdq7lh4.apps.googleusercontent.com",
+          "client_id": "486491869456-fd10bcc2djush544rligjq07srf3rmdb.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.comin",
@@ -23,20 +23,20 @@
           }
         },
         {
-          "client_id": "891713971707-p4isnqdceeo9jl7pgtmf9c7m5hc2pvh8.apps.googleusercontent.com",
+          "client_id": "486491869456-d4597q4objeniu3g8qc6lahqmpaftlc6.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCFVFqTT7V6NBOugFCS18WA6sx1NO_YCaI"
+          "current_key": "AIzaSyAF9IkhM5XrtpcJgCPDY_CtnquX_ahnP6c"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "891713971707-p4isnqdceeo9jl7pgtmf9c7m5hc2pvh8.apps.googleusercontent.com",
+              "client_id": "486491869456-d4597q4objeniu3g8qc6lahqmpaftlc6.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
