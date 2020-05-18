@@ -18,10 +18,11 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
+            android:id="@+id/my_info"
             android:src="@drawable/myaccount_img" />
 
         <ImageView
-            android:id="@+id/zzim_icon"
+            android:id="@+id/zzim_list"
             android:src="@drawable/heart_img"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -30,7 +31,7 @@
             />
 
         <ImageView
-            android:id="@+id/buy_list"
+            android:id="@+id/basket_list"
             android:src="@drawable/shoppingcart_img"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -44,7 +45,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:layout_weight="1"
-            android:id="@+id/my_page"
+            android:id="@+id/pay_list"
             />
 
     </LinearLayout>
