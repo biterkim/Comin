@@ -7,11 +7,16 @@ import androidx.viewpager.widget.ViewPager
 import com.example.comin.Auth.LoginActivity
 import com.example.comin.Auth.MyCominActivity
 import com.example.comin.BuyHistory.BuyHistoryActivity
+import com.example.comin.Fragment.ListFragment.PremiumFragment
+import com.example.comin.Fragment.ListFragment.Side_Menu_Fragment
+import com.example.comin.Fragment.ListFragment.SquareFragment
+import com.example.comin.Fragment.ListFragment.TreasureFragment
 import com.example.comin.ShoppingCart.ShoppingCartActivity
 import com.example.comin.Zzim.ZzimActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.bottom.*
+import kotlinx.android.synthetic.main.mainmenu.*
 
 class MainActivity : AppCompatActivity(){
 
@@ -25,36 +30,57 @@ class MainActivity : AppCompatActivity(){
 
         auth = FirebaseAuth.getInstance()
 
-        val img = arrayOf(
-            R.drawable.premium,
-            R.drawable.square,
-            R.drawable.treasure,
-            R.drawable.sidedish
-        )
 
-        val text = arrayOf(
-            "프리미엄 도시락",
-            "사각 도시락",
-            "보물 도시락",
-            "반찬 및 음료"
-        )
-
-        val gridviewAdapter = GridviewAdapter(this, img,text)
-        gridview.adapter = gridviewAdapter
-
-        gridview.setOnItemClickListener { adapterView, view, i, l ->
-
-
-            val intent = Intent(this, LectureActivity::class.java)
-            intent.putExtra("grid_p",i); // 내가 클릭한 그리드뷰(도시락 4종류)의 postion을 LectureActivity로 넘겨준다 grid_p
-            startActivity(intent)
-
-        }
+//        val img = arrayOf(
+//            R.drawable.premium,
+//            R.drawable.square,
+//            R.drawable.treasure,
+//            R.drawable.sidedish
+//        )
+//
+//        val text = arrayOf(
+//            "프리미엄 도시락",
+//            "사각 도시락",
+//            "보물 도시락",
+//            "반찬 및 음료"
+//        )
+//
+//        val gridviewAdapter = GridviewAdapter(this, img,text)
+//        gridview.adapter = gridviewAdapter
+//
+//        gridview.setOnItemClickListener { adapterView, view, i, l ->
+//
+//
+//            val intent = Intent(this, LectureActivity::class.java)
+//            intent.putExtra("grid_p",i); // 내가 클릭한 그리드뷰(도시락 4종류)의 postion을 LectureActivity로 넘겨준다 grid_p
+//            startActivity(intent)
+//
+//        }
 
         viewpager = findViewById(R.id.viewpager) as ViewPager
 
         val adapter = ViewpagerAdapter(this)
         viewpager.adapter = adapter
+
+        premium_btn.setOnClickListener {
+            val intent = Intent(this, PremiumFragment::class.java)
+            startActivity(intent)
+        }
+
+        square_btn.setOnClickListener {
+            val intent = Intent(this, SquareFragment::class.java)
+            startActivity(intent)
+        }
+
+        treasure_btn.setOnClickListener {
+            val intent = Intent(this, TreasureFragment::class.java)
+            startActivity(intent)
+        }
+
+        side_btn.setOnClickListener {
+            val intent = Intent(this, Side_Menu_Fragment::class.java)
+            startActivity(intent)
+        }
 
         zzim_list.setOnClickListener {
             val intent = Intent(this, ZzimActivity::class.java)
