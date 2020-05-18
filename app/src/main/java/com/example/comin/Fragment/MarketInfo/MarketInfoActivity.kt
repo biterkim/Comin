@@ -41,6 +41,16 @@ class MarketInfoActivity : AppCompatActivity() {
                 }
 
             }
+        FirebaseUtils.db
+            .collection("carts")
+            .document(FirebaseUtils.getUid())
+            .get()
+            .addOnSuccessListener  {
+                Toast.makeText(this, "성공", Toast.LENGTH_LONG).show()
+            }
+            .addOnFailureListener {
+                Toast.makeText(this, "실패", Toast.LENGTH_LONG).show()
+            }
 
        plus_button.setOnClickListener {
            var count =Integer.parseInt(count_text.text.toString())
@@ -57,19 +67,20 @@ class MarketInfoActivity : AppCompatActivity() {
         }
 
         basket_button.setOnClickListener {
+
             FirebaseUtils.db
                 .collection("carts")
                 .document(FirebaseUtils.getUid())
-                .update(intent.getStringExtra("title"), true)
+                .update(intent.getStringExtra("title"),count_text.text.toString())
                 .addOnSuccessListener {
                     Toast.makeText(this, "성공", Toast.LENGTH_LONG).show()
                 }
                 .addOnFailureListener {
-                    Toast.makeText(this, "실패", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "실패"+FirebaseUtils.getUid(), Toast.LENGTH_LONG).show()
                 }
 
-            //var intent = Intent(this, ShoppingCartActivity::class.java)
-            //startActivity(intent)
+            var intent = Intent(this, ShoppingCartActivity::class.java)
+            startActivity(intent)
         }
 
         zzim.setOnClickListener {
