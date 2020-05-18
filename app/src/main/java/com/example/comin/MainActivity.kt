@@ -7,6 +7,7 @@ import androidx.viewpager.widget.ViewPager
 import com.example.comin.Auth.LoginActivity
 import com.example.comin.Auth.MyCominActivity
 import com.example.comin.BuyHistory.BuyHistoryActivity
+import com.example.comin.ShoppingCart.ShoppingCartActivity
 import com.example.comin.Zzim.ZzimActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
@@ -45,7 +46,7 @@ class MainActivity : AppCompatActivity(){
 
 
             val intent = Intent(this, LectureActivity::class.java)
-            intent.putExtra("grid_p",i); // 내가 클릭한 그리드뷰(도시락 4종류)의 postion을 LecturActivity로 넘겨준다 grid_p
+            intent.putExtra("grid_p",i); // 내가 클릭한 그리드뷰(도시락 4종류)의 postion을 LectureActivity로 넘겨준다 grid_p
             startActivity(intent)
 
         }
@@ -55,17 +56,21 @@ class MainActivity : AppCompatActivity(){
         val adapter = ViewpagerAdapter(this)
         viewpager.adapter = adapter
 
-        zzim_icon.setOnClickListener {
+        zzim_list.setOnClickListener {
             val intent = Intent(this, ZzimActivity::class.java)
             startActivity(intent)
         }
 
-        buy_list.setOnClickListener {
+        pay_list.setOnClickListener {
             val intent = Intent(this, BuyHistoryActivity::class.java)
             startActivity(intent)
         }
+        basket_list.setOnClickListener {
+            val intent = Intent(this, ShoppingCartActivity::class.java)
+            startActivity(intent)
+        }
 
-        my_page.setOnClickListener {
+        my_info.setOnClickListener {
             if(auth.currentUser ==null){
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
