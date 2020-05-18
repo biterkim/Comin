@@ -57,8 +57,19 @@ class MarketInfoActivity : AppCompatActivity() {
         }
 
         basket_button.setOnClickListener {
-            var intent = Intent(this, ShoppingCartActivity::class.java)
-            startActivity(intent)
+            FirebaseUtils.db
+                .collection("carts")
+                .document(FirebaseUtils.getUid())
+                .update(intent.getStringExtra("title"), true)
+                .addOnSuccessListener {
+                    Toast.makeText(this, "성공", Toast.LENGTH_LONG).show()
+                }
+                .addOnFailureListener {
+                    Toast.makeText(this, "실패", Toast.LENGTH_LONG).show()
+                }
+
+            //var intent = Intent(this, ShoppingCartActivity::class.java)
+            //startActivity(intent)
         }
 
         zzim.setOnClickListener {
